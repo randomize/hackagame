@@ -33,7 +33,6 @@ public class Hen : MonoBehaviour
 
     public void PlayRanomKick()
     {
-        Debug.Log("Played kicvk");
         int indx = Random.Range(0, kicks.Length);
         AudioSource.PlayClipAtPoint(kicks[indx], transform.position);
     }

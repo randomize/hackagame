@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  gameScore: 0
   hen: {fileID: 137135923}
   gameOverLabel: {fileID: 219938888}
   gameOverScoreLabel: {fileID: 1705657039}
@@ -7105,10 +7104,10 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1729370515}
-  m_Mass: 1.5
+  m_Mass: .200000003
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 2
+  m_AngularDrag: 0
+  m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
