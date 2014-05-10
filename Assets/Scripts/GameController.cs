@@ -40,6 +40,8 @@ public class GameController : MonoBehaviour
             hen.transform.position = Camera.main.ScreenToWorldPoint(toScreen);
         }
 
+        scoreLabel.text = string.Format("Score: {0:D4}", gameScore);
+
 	    if (toScreen.y < 0 && state == GameState.InGame)
 	    {
 	        state = GameState.GameOver;
