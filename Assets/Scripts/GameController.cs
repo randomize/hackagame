@@ -3,8 +3,19 @@
 public class GameController : MonoBehaviour
 {
 
+    public enum GameState 
+    {
+        InGame,
+        GameOver
+    }
+
+    public GameState state;
     public int gameScore;
     public GameObject hen;
+
+    public TextMesh gameOverLabel;
+    public TextMesh gameOverScoreLabel;
+    public TextMesh scoreLabel;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +28,6 @@ public class GameController : MonoBehaviour
 	    Vector3 henPosition = hen.transform.position;
 	    Vector3 toScreen = Camera.main.WorldToScreenPoint(henPosition);
 
-        //Debug.Log(toScreen.x);
 	    if (toScreen.x > Screen.width)
 	    {
 	        toScreen.x = 0;
@@ -29,5 +39,12 @@ public class GameController : MonoBehaviour
             toScreen.x = Screen.width;
             hen.transform.position = Camera.main.ScreenToWorldPoint(toScreen);
         }
+
+	    if (toScreen.y < 0 )
+	    {
+	        state = GameState.GameOver;
+
+	    }
+
 	}
 }
