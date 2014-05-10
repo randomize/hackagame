@@ -12,7 +12,7 @@ GameObject:
   - 58: {fileID: 5800000}
   - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Hen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 212: {fileID: 21200000}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hen_r_l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400004}
   - 212: {fileID: 21200002}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hen_torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400006}
   - 212: {fileID: 21200004}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hen_r_w
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400008}
   - 212: {fileID: 21200006}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hen-eyes_plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400010}
   - 212: {fileID: 21200008}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hen_r_y
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - 4: {fileID: 400012}
   - 199: {fileID: 19900000}
   - 198: {fileID: 19800000}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ps2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400014}
   - 212: {fileID: 21200010}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hen_l_y
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - 4: {fileID: 400016}
   - 199: {fileID: 19900002}
   - 198: {fileID: 19800002}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ps1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400018}
   - 212: {fileID: 21200012}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hen_l_l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400020}
   - 212: {fileID: 21200014}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400022}
   - 212: {fileID: 21200016}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hen_l_w
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400024}
   - 212: {fileID: 21200018}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hen-01_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400026}
   - 212: {fileID: 21200020}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hen-01_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ Rigidbody2D:
   m_AngularDrag: 0
   m_GravityScale: .25
   m_FixedAngle: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
