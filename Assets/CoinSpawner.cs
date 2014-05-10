@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CoinSpawner : MonoBehaviour {
-
+public class CoinSpawner : MonoBehaviour
+{
 	public float heigth = 30;
 	public float width = 30;
 	public int count = 2;
