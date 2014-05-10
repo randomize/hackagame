@@ -48,7 +48,7 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
                 Vector2 directionVector2 = other.transform.position - transform.position;
                 other.gameObject.rigidbody2D.AddForce(directionVector2.normalized*(power > maxPower ? maxPower : power));
 
-                gameController.addPoints(power/20);
+                gameController.addPoints(power/50);
                 gameController.hen.GetComponent<Animator>().SetTrigger("Kick");
                 bootObject.GetComponent<Animator>().SetTrigger("Kick");
             }

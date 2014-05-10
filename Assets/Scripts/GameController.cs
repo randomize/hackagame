@@ -59,14 +59,24 @@ public class GameController : MonoBehaviour
 
         scoreLabel.text = string.Format("Score: {0:D4}", gameScore);
 
-        if (toScreen.y < 0 && state == GameState.InGame)
+        if (toScreen.y < 0)
         {
+            GameOver();
+        }
+
+    }
+
+    public void GameOver()
+    {
+        if (state != GameState.GameOver)
+        {
+            Debug.Log("Game Over");
             state = GameState.GameOver;
             gameOverScoreLabel.gameObject.SetActive(true);
             gameOverLabel.gameObject.SetActive(true);
             gameOverScoreLabel.text = string.Format("Your score {0}", gameScore);
         }
-
+        
     }
 
     public void addPoints(int value)
