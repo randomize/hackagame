@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 8aab8d571e6c5ba44af5d30164b01274
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: hen-01_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1293
+        width: 469
+        height: 1159
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: hen-01_1
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2255
+        width: 125
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: hen-01_2
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 2201
+        width: 85
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: hen-01_3
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 2218
+        width: 169
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: hen-01_4
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 2059
+        width: 388
+        height: 415
+      alignment: 9
+      pivot: {x: .776204526, y: .634282053}
+    - name: hen-01_5
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 2076
+        width: 388
+        height: 413
+      alignment: 9
+      pivot: {x: .223795474, y: .5}
+    - name: hen-01_6
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2094
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: hen-01_7
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1434
+        width: 450
+        height: 525
+      alignment: 9
+      pivot: {x: .881039381, y: .434679121}
+    - name: hen-01_8
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1727
+        width: 280
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: hen-01_9
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 858
+        width: 469
+        height: 1160
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: hen-01_10
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 790
+        width: 403
+        height: 481
+      alignment: 9
+      pivot: {x: .138343394, y: .295023143}
+    - name: hen-01_11
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 892
+        width: 451
+        height: 523
+      alignment: 9
+      pivot: {x: .861184955, y: .45901823}
+    - name: hen-01_12
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1180
+        width: 403
+        height: 481
+      alignment: 9
+      pivot: {x: .0851587355, y: .268286943}
+    - name: hen-01_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 57
+        width: 654
+        height: 618
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: hen-01_14
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 468
+        width: 388
+        height: 412
+      alignment: 9
+      pivot: {x: .190650865, y: .479190856}
+    - name: hen-01_15
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 38
+        width: 388
+        height: 415
+      alignment: 9
+      pivot: {x: .765156567, y: .644611835}
+  spritePackingTag: 
+  userData: 
