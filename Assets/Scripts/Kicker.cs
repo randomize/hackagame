@@ -2,14 +2,14 @@
 
 public class Kicker : MonoBehaviour, ITouchTargetedDelegate
 {
-
-
     public enum KickerState
     {
         Idle,
         Focus,
         Fire
     }
+
+    public GameController gameController;
 
     public float focusRadius = 0.01f;
     public KickerState state = KickerState.Idle;
@@ -43,6 +43,7 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
         {
             Vector2 directionVector2 = other.transform.position - transform.position;
             other.gameObject.rigidbody2D.AddForce(directionVector2.normalized * (power > maxPower ? maxPower : power));
+            gameController.gameScore += power / 20;
             state = KickerState.Idle;
             collider2D.enabled = false;
             HideKicker();
