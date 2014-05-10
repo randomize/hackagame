@@ -10,7 +10,7 @@ public class Superman : MonoBehaviour
 	void Start ()
 	{
 
-	    var vec = new Vector3(Random.Range(-30.0f, 30.0f), Random.Range(0, 200), 0);
+	    var vec = new Vector3(Random.Range(-20.0f, 20.0f), Random.Range(0, 200), 0);
 	    transform.position = vec;
 
 	}
@@ -37,7 +37,7 @@ public class Superman : MonoBehaviour
     IEnumerator CoroutinePower()
     {
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(6);
         hen.GetComponent<Animator>().SetTrigger("SuperStop");
 
     }
