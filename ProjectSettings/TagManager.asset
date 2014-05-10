@@ -5,6 +5,7 @@ TagManager:
   tags:
   - 
   - FxTemporaire
+  - Barr
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -50,4 +51,8 @@ TagManager:
   - name: Chicken
     userID: 1
     uniqueID: 3692288941
+    locked: 0
+  - name: Front
+    userID: 3
+    uniqueID: 956676925
     locked: 0

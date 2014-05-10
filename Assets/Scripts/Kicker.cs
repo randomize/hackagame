@@ -9,6 +9,8 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
         Fire
     }
 
+    public GameObject bar;
+
     public GameController gameController;
     public GameObject bootObject;
 
@@ -33,7 +35,17 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
         if (state == KickerState.Focus)
         {
             power += focusSpeed;
+            var s = bar.transform.localScale;
+            s.x = (float)power/(maxPower - minPower)*0.1f;
+            bar.transform.localScale = s;
         }
+        else
+        {
+            var s = bar.transform.localScale;
+            s.x = 0;
+            bar.transform.localScale = s;
+        }
+
 
 
     }

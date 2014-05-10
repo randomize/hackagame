@@ -8,6 +8,9 @@ public class Hen : MonoBehaviour
 
     public AudioClip[] kicks;
 
+    public GameObject helmet;
+    public GameObject boot;
+
     // Use this for initialization
     void Start()
     {
@@ -29,11 +32,43 @@ public class Hen : MonoBehaviour
             gameObject.rigidbody2D.velocity = velocity;
         }
 
+        if (Camera.main.transform.position.y > 900)
+        {
+            helmet.SetActive(true);
+        }
+
+    }
+
+    private bool sup = false;
+
+    void FixedUpdate()
+    {
+        if (sup)
+        {
+            rigidbody2D.AddForce(new Vector3(0,80,0));
+        }
     }
 
     public void PlayRanomKick()
     {
-        int indx = Random.Range(0, kicks.Length);
-        AudioSource.PlayClipAtPoint(kicks[indx], transform.position);
+        //int indx = Random.Range(0, kicks.Length);
+        //AudioSource.PlayClipAtPoint(kicks[indx], transform.position);
+        boot.GetComponent<Animator>().SetTrigger("Kick");
+
+    }
+
+    public void StartSuperman()
+    {
+        sup = true;
+
+    }
+
+    public void StopSuperman()
+    {
+        if (sup)
+        {
+        sup = false;
+        rigidbody2D.velocity = Vector2.zero;
+        }
     }
 }
