@@ -239,9 +239,9 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1915664746}
   m_GameObject: {fileID: 137135923}
   m_Mass: 1
-  m_LinearDrag: .25
+  m_LinearDrag: .200000003
   m_AngularDrag: 0
-  m_GravityScale: .25
+  m_GravityScale: .699999988
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7da4a32e63a007642ae145c574fe9cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxFallVelocity: 15
+  maxFallVelocity: 25
   maxFligthVelocity: 100
   kicks:
   - {fileID: 8300000, guid: 77f3f92055366584a95105c33a28758b, type: 3}
@@ -4866,10 +4866,10 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1729370515}
-  m_Mass: 1
+  m_Mass: 1.5
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -6125,6 +6125,10 @@ Prefab:
     - target: {fileID: 400000, guid: 455600c8d2828454ea04d688d4d83e5b, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 455600c8d2828454ea04d688d4d83e5b, type: 2}
+      propertyPath: maxFallVelocity
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 455600c8d2828454ea04d688d4d83e5b, type: 2}
