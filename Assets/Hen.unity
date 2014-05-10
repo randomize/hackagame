@@ -4302,9 +4302,9 @@ MonoBehaviour:
   heigth: 30
   width: 50
   count: 100
-  xMul: 4
+  xMul: 12
   yMul: 2.55999994
-  xParamMul: 7
+  xParamMul: 6
 --- !u!4 &1240930302
 Transform:
   m_ObjectHideFlags: 0
