@@ -3,6 +3,7 @@
 public class GameController : MonoBehaviour
 {
 
+    public int gameScoore;
     public GameObject hen;
 
 	// Use this for initialization
@@ -13,7 +14,6 @@ public class GameController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-	    Texture2D spriteTexture = hen.GetComponent<SpriteRenderer>().sprite.texture;
 	    Vector3 henPosition = hen.transform.position;
 	    Vector3 toScreen = Camera.main.WorldToScreenPoint(henPosition);
 
