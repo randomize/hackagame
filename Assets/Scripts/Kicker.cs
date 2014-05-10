@@ -75,6 +75,9 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
         collider2D.enabled = false;
         gameObject.transform.position = position;
         this.transform.position = position.ToWorldVector2();
+        Animator bootAnimator = bootObject.GetComponent<Animator>();
+        bootAnimator.ResetTrigger("Cancel");
+        bootAnimator.ResetTrigger("Kick");
         bootObject.GetComponent<Animator>().SetTrigger("Ready");
         return true;
     }
