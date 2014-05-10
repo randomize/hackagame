@@ -41,6 +41,7 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
     {
         if (other)
         {
+
             if (power > minPower)
             {
                 Vector2 directionVector2 = other.transform.position - transform.position;

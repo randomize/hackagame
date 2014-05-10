@@ -40,10 +40,12 @@ public class GameController : MonoBehaviour
             hen.transform.position = Camera.main.ScreenToWorldPoint(toScreen);
         }
 
-	    if (toScreen.y < 0 )
+	    if (toScreen.y < 0 && state == GameState.InGame)
 	    {
 	        state = GameState.GameOver;
-
+            gameOverScoreLabel.gameObject.SetActive(true);
+            gameOverLabel.gameObject.SetActive(true);
+            gameOverScoreLabel.text = string.Format("Your score {0}", gameScore);
 	    }
 
 	}
