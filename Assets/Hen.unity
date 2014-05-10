@@ -1493,7 +1493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &686907571
 Transform:
   m_ObjectHideFlags: 0
@@ -1589,11 +1589,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400008, guid: b121124eecd30ee41b4d004e95c2ab56, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1000
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: b121124eecd30ee41b4d004e95c2ab56, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1000
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: b121124eecd30ee41b4d004e95c2ab56, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1619,6 +1619,10 @@ Prefab:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 45563874}
+    - target: {fileID: 11400002, guid: b121124eecd30ee41b4d004e95c2ab56, type: 2}
+      propertyPath: bootObject
+      value: 
+      objectReference: {fileID: 1979650291}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b121124eecd30ee41b4d004e95c2ab56, type: 2}
   m_RootGameObject: {fileID: 2131121471}
@@ -6234,6 +6238,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1979650292}
   - 212: {fileID: 2131121472}
+  - 95: {fileID: 1979650293}
   m_Layer: 0
   m_Name: Root
   m_TagString: Untagged
@@ -6248,7 +6253,7 @@ Transform:
   m_PrefabInternal: {fileID: 759429018}
   m_GameObject: {fileID: 1979650291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.268694401, y: .0147328377, z: 1.65234375}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2096596994}
@@ -6256,6 +6261,21 @@ Transform:
   - {fileID: 686907571}
   - {fileID: 1738462685}
   m_Father: {fileID: 2131121473}
+--- !u!95 &1979650293
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: b121124eecd30ee41b4d004e95c2ab56,
+    type: 2}
+  m_PrefabInternal: {fileID: 759429018}
+  m_GameObject: {fileID: 1979650291}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe7bfc424dd2c1e4f902fdade198a41f, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &2037469890
 Prefab:
   m_ObjectHideFlags: 0
@@ -6336,7 +6356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2096596994
 Transform:
   m_ObjectHideFlags: 0
@@ -6566,7 +6586,7 @@ Transform:
   m_PrefabInternal: {fileID: 759429018}
   m_GameObject: {fileID: 2131121471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1000, y: -1000, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1979650292}
@@ -6596,6 +6616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 45563874}
+  bootObject: {fileID: 1979650291}
   focusRadius: .25
   state: 0
   focusSpeed: 50

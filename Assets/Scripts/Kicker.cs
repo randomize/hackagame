@@ -10,6 +10,7 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
     }
 
     public GameController gameController;
+    public GameObject bootObject;
 
     public float focusRadius = 0.01f;
     public KickerState state = KickerState.Idle;
@@ -45,16 +46,19 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
             if (power > minPower)
             {
                 Vector2 directionVector2 = other.transform.position - transform.position;
-                other.gameObject.rigidbody2D.AddForce(directionVector2.normalized * (power > maxPower ? maxPower : power));
-                
-                gameController.gameScore += power / 20;
+                other.gameObject.rigidbody2D.AddForce(directionVector2.normalized*(power > maxPower ? maxPower : power));
+
+                gameController.gameScore += power/20;
                 gameController.hen.GetComponent<Animator>().SetTrigger("Kick");
+                bootObject.GetComponent<Animator>().SetTrigger("Kick");
+            }
+            else
+            {
+                bootObject.GetComponent<Animator>().SetTrigger("Cancel");
             }
 
             state = KickerState.Idle;
-            HideKicker();
             collider2D.enabled = false;
-
         }
 
     }
@@ -67,6 +71,7 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
         collider2D.enabled = false;
         gameObject.transform.position = position;
         this.transform.position = position.ToWorldVector2();
+        bootObject.GetComponent<Animator>().SetTrigger("Ready");
         return true;
     }
 
@@ -94,18 +99,14 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
     {
         state = KickerState.Idle;
         collider2D.enabled = false;
-        HideKicker();
+        bootObject.GetComponent<Animator>().SetTrigger("Cancel");
     }
 
     public void TouchCanceled(Vector2 position, int fingerId)
     {
         state = KickerState.Idle;
         collider2D.enabled = false;
-        HideKicker();
+        bootObject.GetComponent<Animator>().SetTrigger("Cancel");
     }
 
-    public void HideKicker()
-    {
-        gameObject.transform.position = new Vector3(-1000, -1000, 0);
-    }
 }
