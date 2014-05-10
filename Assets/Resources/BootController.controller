@@ -46,13 +46,13 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110200000}
   m_DstState: {fileID: 110269513}
-  m_TransitionDuration: .139985085
-  m_TransitionOffset: 0
+  m_TransitionDuration: .0780802965
+  m_TransitionOffset: .0232723542
   m_Conditions:
   - m_ConditionMode: 5
     m_ConditionEvent: Ready
     m_EventTreshold: 0
-    m_ExitTime: .860014915
+    m_ExitTime: .921919703
   - m_ConditionMode: 1
     m_ConditionEvent: Kick
     m_EventTreshold: 0
@@ -68,13 +68,13 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110277842}
   m_DstState: {fileID: 110200000}
-  m_TransitionDuration: .0322121978
-  m_TransitionOffset: .217788085
+  m_TransitionDuration: .06569428
+  m_TransitionOffset: .0127181355
   m_Conditions:
   - m_ConditionMode: 5
     m_ConditionEvent: Cancel
     m_EventTreshold: 0
-    m_ExitTime: .967787802
+    m_ExitTime: .934305727
   - m_ConditionMode: 1
     m_ConditionEvent: Ready
     m_EventTreshold: 0
@@ -90,13 +90,13 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110269513}
   m_DstState: {fileID: 110277842}
-  m_TransitionDuration: .0224216487
-  m_TransitionOffset: .242152438
+  m_TransitionDuration: .0941812098
+  m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
     m_ConditionEvent: Ready
     m_EventTreshold: 0
-    m_ExitTime: .977578342
+    m_ExitTime: .90581882
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -109,7 +109,7 @@ Transition:
   m_SrcState: {fileID: 110200000}
   m_DstState: {fileID: 110277842}
   m_TransitionDuration: .0461135507
-  m_TransitionOffset: .203886643
+  m_TransitionOffset: .028448116
   m_Conditions:
   - m_ConditionMode: 5
     m_ConditionEvent: Cancel
