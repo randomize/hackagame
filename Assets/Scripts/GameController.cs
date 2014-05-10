@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class GameController : MonoBehaviour
+public class GameController : MonoBehaviour, ITouchTargetedDelegate
 {
 
     public static GameController instance
@@ -34,9 +34,9 @@ public class GameController : MonoBehaviour
     private int gameScore;
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
-
+        TouchDispatcher.Instance.addTargetedDelegate(this, 1, false);
     }
 
     // Update is called once per frame
@@ -76,7 +76,7 @@ public class GameController : MonoBehaviour
             gameOverLabel.gameObject.SetActive(true);
             gameOverScoreLabel.text = string.Format("Your score {0}", gameScore);
         }
-        
+
     }
 
     public void addPoints(int value)
@@ -85,5 +85,27 @@ public class GameController : MonoBehaviour
         {
             gameScore += value;
         }
+    }
+
+    public bool TouchBegan(Vector2 position, int fingerId)
+    {
+        if (state == GameState.GameOver)
+        {
+            Application.LoadLevel(0);
+        }
+
+        return false;
+    }
+
+    public void TouchMoved(Vector2 position, int fingerId)
+    {
+    }
+
+    public void TouchEnded(Vector2 position, int fingerId)
+    {
+    }
+
+    public void TouchCanceled(Vector2 position, int fingerId)
+    {
     }
 }

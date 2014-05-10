@@ -27,7 +27,7 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         if (state == KickerState.Focus)
