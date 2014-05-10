@@ -31,7 +31,6 @@ GameObject:
   - 4: {fileID: 400002}
   - 23: {fileID: 2300000}
   - 102: {fileID: 10200000}
-  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: GameOverScore
   m_TagString: Untagged
@@ -49,7 +48,6 @@ GameObject:
   - 4: {fileID: 400004}
   - 23: {fileID: 2300002}
   - 102: {fileID: 10200002}
-  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: ScoreLabel
   m_TagString: Untagged
@@ -162,7 +160,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0db3523c85d244740809a19fec404ffa, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -183,7 +181,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0db3523c85d244740809a19fec404ffa, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -204,7 +202,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0db3523c85d244740809a19fec404ffa, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -294,18 +292,18 @@ TextMesh:
   m_GameObject: {fileID: 100002}
   m_Text: 'Your score '
   m_OffsetZ: 0
-  m_CharacterSize: 3
+  m_CharacterSize: 1
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 0
-  m_FontStyle: 1
+  m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 0db3523c85d244740809a19fec404ffa, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4278226687
+    rgba: 4278190080
 --- !u!102 &10200002
 TextMesh:
   serializedVersion: 3
@@ -315,18 +313,18 @@ TextMesh:
   m_GameObject: {fileID: 100004}
   m_Text: 'Score: '
   m_OffsetZ: 0
-  m_CharacterSize: 3
+  m_CharacterSize: .5
   m_LineSpacing: 1
   m_Anchor: 0
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 0
-  m_FontStyle: 1
+  m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 0db3523c85d244740809a19fec404ffa, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4278226687
+    rgba: 4278190080
 --- !u!102 &10200004
 TextMesh:
   serializedVersion: 3
@@ -336,18 +334,18 @@ TextMesh:
   m_GameObject: {fileID: 100006}
   m_Text: Chick is dead!
   m_OffsetZ: 0
-  m_CharacterSize: 4
+  m_CharacterSize: 1
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 0
-  m_FontStyle: 1
+  m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 0db3523c85d244740809a19fec404ffa, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4278190256
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -361,32 +359,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upperBound: .200000003
   hen: {fileID: 0}
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db36d808a51a3cd41a6159fb7a190b29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  textLabel: {fileID: 10200000}
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db36d808a51a3cd41a6159fb7a190b29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  textLabel: {fileID: 10200002}
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
