@@ -18,6 +18,7 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate {
     public int power = 10;
     private Vector2 beginFocusPosition;
 
+    public SpriteRenderer spriteRenderer;
 
 	// Use this for initialization
 	void Awake() {
@@ -42,7 +43,8 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate {
             Vector2 directionVector2 = other.transform.position - transform.position;
             other.gameObject.rigidbody2D.AddForce(directionVector2.normalized * (power > maxPower? maxPower: power));
             state = KickerState.Idle;
-            gameObject.collider2D.enabled = false;
+            collider2D.enabled = false;
+            spriteRenderer.enabled = false;
         }
         
     }
@@ -53,6 +55,7 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate {
         state = KickerState.Focus;
         beginFocusPosition = position.ToWorldVector2();
         collider2D.enabled = false;
+        spriteRenderer.enabled = true;
         this.transform.position = position.ToWorldVector2();
         return true;
     }
@@ -78,10 +81,13 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate {
     {
         state = KickerState.Idle;
         collider2D.enabled = false;
+        spriteRenderer.enabled = false;
     }
 
     public void TouchCanceled(Vector2 position, int fingerId)
     {
-        throw new System.NotImplementedException();
+        state = KickerState.Idle;
+        collider2D.enabled = false;
+        spriteRenderer.enabled = false;
     }
 }
