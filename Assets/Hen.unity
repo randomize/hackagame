@@ -2313,7 +2313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a0de09947b9f049ba30f18945d5cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upperBound: .200000003
+  upperBound: .600000024
   hen: {fileID: 137135923}
 --- !u!1 &515668291
 GameObject:
@@ -8545,6 +8545,10 @@ Prefab:
       propertyPath: controller
       value: 
       objectReference: {fileID: 45563874}
+    - target: {fileID: 11400000, guid: 36c267f438ae20c45ad7968d2c85318a, type: 2}
+      propertyPath: upperBound
+      value: .600000024
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400004, guid: 36c267f438ae20c45ad7968d2c85318a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 36c267f438ae20c45ad7968d2c85318a, type: 2}
