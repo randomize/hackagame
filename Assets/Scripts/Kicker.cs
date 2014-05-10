@@ -52,6 +52,7 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate {
         state = KickerState.Focus;
         beginFocusPosition = position.ToWorldVector2();
         collider2D.enabled = false;
+        gameObject.transform.position = position;
         this.transform.position = position.ToWorldVector2();
         return true;
     }
@@ -77,11 +78,13 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate {
     {
         state = KickerState.Idle;
         collider2D.enabled = false;
+        gameObject.transform.position = new Vector3(-1000, -1000,0);
     }
 
     public void TouchCanceled(Vector2 position, int fingerId)
     {
         state = KickerState.Idle;
         collider2D.enabled = false;
+        gameObject.transform.position = new Vector3(-1000, -1000, 0);
     }
 }
