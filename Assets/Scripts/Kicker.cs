@@ -48,7 +48,7 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
                 Vector2 directionVector2 = other.transform.position - transform.position;
                 other.gameObject.rigidbody2D.AddForce(directionVector2.normalized*(power > maxPower ? maxPower : power));
 
-                gameController.gameScore += power/20;
+                gameController.addPoints(power/20);
                 gameController.hen.GetComponent<Animator>().SetTrigger("Kick");
                 bootObject.GetComponent<Animator>().SetTrigger("Kick");
             }
@@ -65,6 +65,10 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
 
     public bool TouchBegan(Vector2 position, int fingerId)
     {
+
+        if (gameController.state != GameController.GameState.InGame)
+            return false;
+
         power = 0;
         state = KickerState.Focus;
         beginFocusPosition = position.ToWorldVector2() - Camera.main.transform.position.ToVector2();
