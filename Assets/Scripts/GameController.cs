@@ -97,6 +97,11 @@ public class GameController : MonoBehaviour, ITouchTargetedDelegate
         return false;
     }
 
+    void OnDestroy()
+    {
+        TouchDispatcher.Instance.removeDelegate(this);
+    }
+
     public void TouchMoved(Vector2 position, int fingerId)
     {
     }

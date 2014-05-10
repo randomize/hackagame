@@ -28,6 +28,11 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
         TouchDispatcher.Instance.addTargetedDelegate(this, 0, false);
     }
 
+    void OnDestroy()
+    {
+        TouchDispatcher.Instance.removeDelegate(this);
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
