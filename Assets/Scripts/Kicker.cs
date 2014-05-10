@@ -47,6 +47,8 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
             state = KickerState.Idle;
             collider2D.enabled = false;
             HideKicker();
+			gameController.hen.GetComponent<Animator>().SetTrigger("Kick");
+
         }
 
     }

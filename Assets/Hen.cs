@@ -5,6 +5,8 @@ public class Hen : MonoBehaviour {
     public float maxFallVelocity = 15f;
     public float maxFligthVelocity = 50f;
 
+	public AudioClip[] kicks;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -24,5 +26,11 @@ public class Hen : MonoBehaviour {
             gameObject.rigidbody2D.velocity = velocity;
 	    }
 
+	}
+
+	public void PlayRanomKick(){
+		Debug.Log ("Played kicvk");
+		int indx = Random.Range (0, kicks.Length);
+		AudioSource.PlayClipAtPoint (kicks [indx], transform.position);
 	}
 }

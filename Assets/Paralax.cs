@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[UnityEngine.ExecuteInEditMode]
+//[UnityEngine.ExecuteInEditMode]
 public class Paralax : MonoBehaviour {
 
 	[Range(0.01f, 5)]

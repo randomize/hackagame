@@ -16,4 +16,6 @@ public class FolowChick : MonoBehaviour
             transform.position += new Vector3(0, diff, 0);
         }
     }
+
+
 }
