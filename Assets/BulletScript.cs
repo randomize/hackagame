@@ -5,12 +5,11 @@ public class BulletScript : MonoBehaviour {
 	public Vector3 speed;
 
 	// Use this for initialization
-	void Awake () {
+	public void Awake(){
+		Debug.Log ("awake");
 		BulletUpd ();
 		//transform.localRotation = Quaternion.AngleAxis (0, speed);
 			//FromToRotation (Vector3.zero, speed);
-
-
 	}
 	
 	// Update is called once per frame
@@ -25,6 +24,7 @@ public class BulletScript : MonoBehaviour {
 		}
 	}
 	void BulletUpd() {
+		Debug.Log("ololo");
 		transform.position = 
 			new Vector3 (Random.Range (0, 2) == 0 ? 30 : -30, Random.Range (0, 100), 0);
 		speed = 5 * new Vector3 (Random.Range (-1, 1f), Random.Range (-1, 1f));
@@ -34,6 +34,9 @@ public class BulletScript : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		//play delink
 		//AudioSource.PlayClipAtPoint (delink, transform.position);
-		Destroy(gameObject);
+		if (other.gameObject.name == "Hen") {
+			Destroy(gameObject);
+
+		}
 	}
 }

@@ -5,7 +5,7 @@ using System.Collections;
 public class BulletSpawner : MonoBehaviour {
 
 	public int count = 0;
-	public int rate = 30;
+	public int rate = 10;
 
 	// Use this for initialization
 	/*void Start () {
