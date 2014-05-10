@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
 	    Vector3 henPosition = hen.transform.position;
 	    Vector3 toScreen = Camera.main.WorldToScreenPoint(henPosition);
 
-        Debug.Log(toScreen.x);
+        //Debug.Log(toScreen.x);
 	    if (toScreen.x > Screen.width)
 	    {
 	        toScreen.x = 0;
