@@ -37,7 +37,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Radius: .5
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7fab7124add55d4eac1b68cfc1ed6f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delink: {fileID: 8300000, guid: 3cdf1aee62df9a34f9787db59b464a44, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 7f5014e451b542e499530160fb84b1b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34bd9cfdfd17bda41a8310ef5236c10c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
