@@ -6208,6 +6208,10 @@ Prefab:
       propertyPath: focusSpeed
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: b121124eecd30ee41b4d004e95c2ab56, type: 2}
+      propertyPath: focusRadius
+      value: 1.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b121124eecd30ee41b4d004e95c2ab56, type: 2}
   m_RootGameObject: {fileID: 2131121471}
@@ -16496,7 +16500,7 @@ MonoBehaviour:
   bar: {fileID: 947935429}
   gameController: {fileID: 45563874}
   bootObject: {fileID: 1979650291}
-  focusRadius: .25
+  focusRadius: 1.25
   state: 0
   focusSpeed: 80
   minPower: 300

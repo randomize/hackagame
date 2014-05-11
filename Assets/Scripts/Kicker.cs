@@ -41,10 +41,14 @@ public class Kicker : MonoBehaviour, ITouchTargetedDelegate
         {
             power += focusSpeed;
             var s = bar.transform.localScale;
-            s.x = (float)power/(maxPower - minPower)*0.1f;
+            
+            if (power > maxPower)
+                power = maxPower;
+
+            s.x = (float)power/(maxPower - minPower)*0.85f;
             bar.transform.localScale = s;
         }
-        else
+        else if (state != KickerState.Fire)
         {
             var s = bar.transform.localScale;
             s.x = 0;
