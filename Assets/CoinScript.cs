@@ -20,9 +20,11 @@ public class CoinScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //play delink
-        AudioSource.PlayClipAtPoint(delink, transform.position);
+        audio.PlayOneShot(delink);
         GameController.instance.addPoints(100);
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        GetComponent<SpriteRenderer>().enabled = false;
     }
 }

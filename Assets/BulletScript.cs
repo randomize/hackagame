@@ -5,6 +5,9 @@ public class BulletScript : MonoBehaviour
 {
     public Vector3 speed;
 
+    public GameObject boom;
+    public AudioClip boomSnd;
+
     //GameObject han;
     public float frame_h = 100;
 
@@ -49,6 +52,17 @@ public class BulletScript : MonoBehaviour
         //AudioSource.PlayClipAtPoint (delink, transform.position);
         if (other.gameObject.name == "Hen")
         {
+            if (other.gameObject.GetComponent<Hen>().IsSuper())
+                return;
+
+            boom.SetActive(true);
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<Collider2D>().enabled = false;
+            enabled = false;
+
+            other.gameObject.GetComponent<Animator>().SetTrigger("Dead");
+            
+            audio.PlayOneShot(boomSnd);
             //Destroy(gameObject);
             GameController.instance.GameOver();
         }

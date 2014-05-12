@@ -10,7 +10,7 @@ public class Superman : MonoBehaviour
 	void Start ()
 	{
 
-	    var vec = new Vector3(Random.Range(-20.0f, 20.0f), Random.Range(0, 200), 0);
+	    var vec = new Vector3(Random.Range(-20.0f, 20.0f), Random.Range(100, 300), 0);
 	    transform.position = vec;
 
 	}

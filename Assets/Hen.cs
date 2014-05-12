@@ -41,6 +41,11 @@ public class Hen : MonoBehaviour
 
     private bool sup = false;
 
+    public bool IsSuper()
+    {
+        return sup;
+    }
+
     void FixedUpdate()
     {
         if (sup)
@@ -70,5 +75,10 @@ public class Hen : MonoBehaviour
         sup = false;
         rigidbody2D.velocity = Vector2.zero;
         }
+    }
+
+    public void DownForce()
+    {
+        rigidbody2D.AddForce(new Vector3(0, -80, 0));
     }
 }
